@@ -1,3 +1,7 @@
+
+
+
+//  ============CURSOR============
 let innerCursor = document.querySelector(".inner-cursor");
 
 document.addEventListener('mousemove',moveCursor);

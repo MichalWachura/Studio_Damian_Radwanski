@@ -1,11 +1,15 @@
+:root{
+    --main-color:#EBEBEB;
+    --black_color:#131212;
+    --white-color:#ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'IBM Plex Mono', monospace;
-    --main-color:#EBEBEB;
-    --black_color:#131212;
-    --white-color:#ffffff;
+    
     cursor: none;
 }
 /* ----------------------CURSOR---------------------- */
@@ -100,6 +104,7 @@ a {
     /* justify-self: flex-end; */
     /* grid-column-start: 2; */
     /* grid-column-end:3; */
+    margin-top:2.5rem ;
     margin-left: 35%;
     display: flex;
     justify-content: space-between;
@@ -123,10 +128,17 @@ a {
     text-align: justify;
 }
   
-
+.images-container a{
+    align-self:  flex-end;
+}
 #left {
-    transform: rotate(180deg);
-    width: 2px;
+    align-self:  flex-end;
+    transform: rotate(-90deg);
+    width: 3rem;
+    transition: 0.3s all ease-in;
+}
+#left:hover{
+    filter: invert(0.5);
 }
 .box {
   
@@ -145,14 +157,21 @@ footer{
     justify-content: center;
     align-items: center;
     width:100%;
-   
+    margin-top: 1rem;
     bottom: 0;
 
 }
 footer p {
     margin-left: 1rem;
 }
-
+::selection{
+    background-color: var(--main-color);
+    color:var(--black_color);
+}
+.text-container-item::selection {
+    background-color: var(--black_color);
+    color:var(--main-color);
+}
 
 /* ==================== MEDIA QUERIESS  ==================== */
 
@@ -216,6 +235,7 @@ footer p {
         font-size: 10px;
         
     }
+    
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

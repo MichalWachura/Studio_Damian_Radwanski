@@ -127,7 +127,10 @@ footer{
 footer p {
     margin-left: 1rem;
 }
-
+ ::selection{
+    background-color: var(--main-color);
+    color:var(--black_color)
+}
 
 
 /* ==================== MEDIA QUERIESS  ==================== */
@@ -164,14 +167,6 @@ footer p {
         opacity: 95%;
         display: none;
     }
-    
-
-
-
-
-
-
-
     .students-list{
         background-color: var(--main-color);
         height: 90%;
