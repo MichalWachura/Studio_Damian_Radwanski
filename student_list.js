@@ -2,7 +2,7 @@ const students = [
     {
         name: "Tomasz Berezowski",
         year: 2012,
-        title:"Żelosko - Dom Rzemiosła nad placem targowwym Rudzie Śląskiej"
+        title:"Żelosko - Dom Rzemiosła nad placem targowym Rudzie Śląskiej"
     },
 
 
