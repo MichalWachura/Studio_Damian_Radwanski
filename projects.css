@@ -2,6 +2,9 @@
     --main-color:#EBEBEB;
     --black_color:#131212;
     --white-color:#ffffff;
+
+    --dark-main-color:var(--black_color);
+    --dark-color:var(--white-color);
 }
 
 *{
@@ -21,12 +24,15 @@
     /* background-color:rgb(228, 61, 61); */
     background-color: #131212;
     pointer-events: none;
-     
     transform: translate(-50%,-50%);
     border-radius: 50%;
     z-index: auto;
     
 }
+
+.navbar:hover .inner-cursor {
+    background-color: #fffefe; /* Change to the desired color */
+  }
 /* ----------------------NAVIGATION BAR---------------------- */
 .navbar{
 
@@ -73,24 +79,7 @@ a {
     
 
 }
-/* ----------------------CURSOR---------------------- */
-.inner-cursor{
-    position:fixed;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    /* background-color:rgb(228, 61, 61); */
-    background-color: #131212;
-    pointer-events: none;
-     
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    z-index: auto;
-    
-}
-.navbar:hover .inner-cursor {
-    background-color: #fffefe; /* Change to the desired color */
-  }
+
 .main-container{
     /* display: grid; */
     /* grid-template-columns: 1fr 2fr; */
@@ -172,6 +161,10 @@ footer p {
     background-color: var(--black_color);
     color:var(--main-color);
 }
+/* ==================== DARK THEME  ==================== */
+
+
+
 
 /* ==================== MEDIA QUERIESS  ==================== */
 
