@@ -36,7 +36,7 @@ const enableDarkMode = () =>{
     navbar.classList.add("dark");
     innerCursorDarkTheme.classList.add("dark");
     studentList.classList.add("dark");
-    studentContainer.classList.add("dark");
+    // studentContainer.classList.add("dark");
     localStorage.setItem("darkMode","enabled");
 
 };
@@ -48,7 +48,7 @@ const disableDarkMode = () =>{
     navbar.classList.remove("dark");
     innerCursorDarkTheme.classList.remove("dark");
     studentList.classList.remove("dark");
-    studentContainer.classList.remove("dark");
+    // studentContainer.classList.remove("dark");
     localStorage.setItem("darkMode","disabled");
 
 };
