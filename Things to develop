@@ -1,8 +1,12 @@
 Things to add:
 - Year Filter
-    -filter
-    -dropdown menu
-- Alphabetic order?
+    -filter by year
+            - fix horizontal lines
+    - dropdown menu
+            - add arrow icon
+            - add functionality
+- Alphabetic Filter
 - Radwan BIO
+    -style with CSS
 - Carousel on the student site?
-- Black round div when a student is hover
+- Black round div when a student container is hover
