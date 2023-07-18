@@ -118,6 +118,7 @@
 .student-list{
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr 9fr; */
+    height: 85vh;
 }
 .student-container{
     /* display: flex; */
@@ -185,6 +186,7 @@ footer{
     align-items: center;
     width:100%;
     bottom: 0;
+    
     
 }
 
