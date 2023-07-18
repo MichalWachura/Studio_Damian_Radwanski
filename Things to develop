@@ -1,4 +1,4 @@
-Things to add:
+Things to add and fix:
 - Year Filter
     -filter by year
             - fix horizontal lines
@@ -9,4 +9,6 @@ Things to add:
 - Radwan BIO
     -style with CSS
 - Carousel on the student site?
-- Black round div when a student container is hover
+- Black circle div when a student container is hover
+- fix horizontal lines when sorting
+
