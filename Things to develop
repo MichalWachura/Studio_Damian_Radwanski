@@ -1,14 +1,13 @@
 Things to add and fix:
 - Year Filter
-    -filter by year
-            - fix horizontal lines
-    - dropdown menu
-            - add arrow icon
-            - add functionality
+     - dropdown menu
+     - add arrow icon
+     - add functionality
 - Alphabetic Filter
 - Radwan BIO
     -style with CSS
 - Carousel on the student site?
 - Black circle div when a student container is hover
-- fix horizontal lines when sorting
+- fix horizontal lines when sorting - done
+- figured out how to make footer stay on the bootom of site
 
