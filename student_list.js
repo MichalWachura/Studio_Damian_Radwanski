@@ -41,44 +41,20 @@ const students = [
     }
 ];
 
+const names = [
+    "Tomasz Berezowski",
+    "Marcin Szafrański",
+    "Marcin Woźnica",
+    "Piotr Szenkowski",
+    "Michał Wachura",
+    "Kamil Wróbel"
+];
+
+names.sort();
+
+students.sort();
+
 console.log(students);
 
-const oldest = students.filter((student)=>{
-    return student.year<2021;
-});
 
-const newest = students.filter((student)=>{
-    return student.year>2021;
-});
-
-console.log(oldest);
-console.log(newest);
-
-const foundStudent = students.find((student)=>{
-    return student.name ==="Kamil Wróbel"
-});
-
-console.log(foundStudent);
-
-
-const numbers = [1,2,3,4,5,6];
-
-// numbers.fill("numer", 0 ,3);
-
-console.log(numbers);
-
-students.forEach((student)=>{
-    console.log(student.name + " This is student")
-});
-
-
-const findName = numbers.includes(1);
-
-console.log(findName);
-
-const showNames = students.map((student)=>{
-    return student.year;
-});
-
-console.log(showNames)
-
+console.log(names);
