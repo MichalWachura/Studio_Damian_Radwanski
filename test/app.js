@@ -68,7 +68,19 @@ year2022Btn.addEventListener("click",()=>{
 
 //  ============ SORTING NAMES ALPHABETICAL ============
 
+const alphaBtn = document.getElementById("alphabetic");
+let names = document.querySelectorAll(".name-surname");
+let namesValues = names.textContent;
 
+alphaBtn.addEventListener("click",()=>{
+    console.log("test");
+    let namesValues = [];
+    names.forEach((name) =>{
+        namesValues.push(name.textContent);
+    });
+    namesValues.sort()
+    console.log(namesValues);
+});
 
 
 //  ============ DARK MODE ============
@@ -83,7 +95,7 @@ const body = document.body;
 const navbar = document.querySelector('.navbar');
 const innerCursorDarkTheme = document.querySelector('.inner-cursor');
 const studentList = document.querySelector('.student-list');
-const studentContainer = document.querySelectorAll('.student-container');
+
 const footer = document.querySelector(".footer");
 
 
@@ -93,7 +105,7 @@ const enableDarkMode = () =>{
     navbar.classList.add("dark");
     innerCursorDarkTheme.classList.add("dark");
     studentList.classList.add("dark");
-    studentContainer.forEach(container =>container.classList.add("dark"));
+    // studentContainer.classList.add("dark");
     localStorage.setItem("darkMode","enabled");
 
 };
@@ -105,7 +117,7 @@ const disableDarkMode = () =>{
     navbar.classList.remove("dark");
     innerCursorDarkTheme.classList.remove("dark");
     studentList.classList.remove("dark");
-    studentContainer.forEach(container =>container.classList.remove("dark"));
+    // studentContainer.classList.remove("dark");
     localStorage.setItem("darkMode","disabled");
 
 };

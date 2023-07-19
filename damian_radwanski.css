@@ -4,8 +4,6 @@
     --main-color:#EBEBEB;
     --black_color:#131212;
     --white-color:#ffffff;
-    --lamp-color:var(--black_color);
-
 
 
     --dark-main-color:var(--black_color);
@@ -46,7 +44,7 @@
     height: 10vh;
     align-items: center;
     justify-content: space-between;
-   
+    font-weight: light;
 }
 .navbar:hover .inner-cursor {
     background-color: #fffefe; /* Change to the desired color */
@@ -56,38 +54,6 @@
     justify-content: flex-end;
     margin-right: 1rem;
     gap: 1rem;
-}
-.dropdown{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* border: solid 2px red; */
-    margin-right: 3rem;
-    margin-top: 11rem;
-}
-.wrap-btn{
-     opacity: 0;
-     display: flex;
-     flex-direction: column;
-}
-
-.drop-btn{
-    /* display: none; */
-    /* position: absolute; */
-    border: solid 1px var(--black_color);
-    background-color: var(--black_color);
-    color: var(--main-color);
-    padding: 0.5rem;
-    transition: 0.3s all ease-out;
-    width: 8rem;
-    display: inline-block;
-
-}
-.drop-btn:hover{
-    background-color: var(--black_color);
-    color: var(--white-color);
-    border: solid 1px var(--white-color);
 }
 .day-night-background{
 
@@ -110,29 +76,9 @@
 .navbar p{
     font-size: 24px;
     padding-left: 1rem;
-    text-decoration: none;
 }
-#damian-radwanski,#damian-radwanski >p{
-    text-decoration: none;
-    color: var(--white-color);
-    transition: 0.3s all ease-in;
-}
-#damian-radwanski:hover,#damian-radwanski >p:hover{
-    text-decoration: none;
-    color: var(--white-color);
-    opacity: 50%;
-}
-
-
-
-
-
 /* ---------------------- LIST ---------------------- */
-
-
-
-
-.student-list a {
+a {
     text-decoration: none;
     color: var(--black_color);
 }
@@ -140,7 +86,6 @@
 .student-list{
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr 9fr; */
-    height: 85vh;
 }
 .student-container{
     /* display: flex; */
@@ -152,18 +97,16 @@
     padding-right: 1rem;
     transition: 0.3s ease-in;
     font-weight: light;
-    border-top: solid 0.3px var(--black_color);
-    /* border-bottom: solid 0.3px var(--black_color); */
-   
 }
 
-
+hr{
+    grid-column-start: 1 ;
+    grid-column-end: 4 ;
+    width: 100%;
+    
+}
 .student-container:hover{
-    color: rgb(190, 189, 189);
-    /* opacity: 30%; */
-    border-top: solid 0.3px var(--black_color);
-    
-    
+    opacity: 30%;
 }
 .name-surname{
     align-self: center;
@@ -184,9 +127,6 @@
     grid-column-end:4 ;
     /* border: 2px solid rgb(38, 0, 128); */
 }
-
-
-
 footer{
     height: 5vh;
     color: var(--main-color);
@@ -196,15 +136,13 @@ footer{
     align-items: center;
     width:100%;
     bottom: 0;
-    
-    
 }
 
 
 #website-year{
     margin-left: 1rem;
 }
-footer #top{
+footer a {
     color: var(--white-color);
     margin-right: 1rem;
     transition: 0.3s all ease-in;
@@ -225,11 +163,7 @@ footer a:hover {
     background-color: var(--main-color);
     color:var(--black_color)
 }
-/* ==================== Display byy Year  ==================== */
 
-.hide{
-    display: none;
-}
 
 
 /* ==================== DARK MODE  ==================== */
@@ -253,16 +187,10 @@ body.dark{
 a.dark {
     text-decoration: none;
     color:var(--dark-color);
-   
-     
-   
 }
-.student-container.dark{
-    border-top: solid 0.3px white;
-}
+
 .student-list.dark>*{
     color: var(--dark-color);
-   
 }
 
 footer.dark{
@@ -275,7 +203,6 @@ footer.dark{
     width:100%;
     bottom: 0;
 }
-
 
 
 /* ==================== MEDIA QUERIESS  ==================== */
