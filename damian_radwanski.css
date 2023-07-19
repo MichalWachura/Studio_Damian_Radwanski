@@ -77,62 +77,43 @@
     font-size: 24px;
     padding-left: 1rem;
 }
-/* ---------------------- LIST ---------------------- */
-a {
-    text-decoration: none;
-    color: var(--black_color);
+/* ---------------------- Main Content ---------------------- */
+.main-container{
+    height: 85vh;
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+    padding-left:4rem;
+    padding-right: 4rem;
 }
 
-.student-list{
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 9fr; */
+.foto-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.student-container{
-    /* display: flex; */
-    /* justify-content: space-between; */
-    display: grid;
-    grid-template-columns: 2fr 1fr 9fr;
-    height: 5vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    transition: 0.3s ease-in;
-    font-weight: light;
+.hero-foto{
+    border-radius: 50%;
+    width: 40rem;
+    height: 40rem;
+    background-color: var(--black_color);
 }
-
-hr{
-    grid-column-start: 1 ;
-    grid-column-end: 4 ;
-    width: 100%;
-    
-}
-.student-container:hover{
-    opacity: 30%;
-}
-.name-surname{
-    align-self: center;
-    grid-column-start:1 ;
-    grid-column-end:2 ;
-    /* border: 2px solid red; */
+.text-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.year{
-    align-self: center;
-    grid-column-start:2 ;
-    grid-column-end:3 ;
-    /* border: 2px solid green; */
-}
-.title{
-    align-self: center;
-    grid-column-start:3 ;
-    grid-column-end:4 ;
-    /* border: 2px solid rgb(38, 0, 128); */
-}
+
 footer{
     height: 5vh;
     color: var(--main-color);
     background-color: var(--black_color);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width:100%;
     bottom: 0;
@@ -167,42 +148,6 @@ footer a:hover {
 
 
 /* ==================== DARK MODE  ==================== */
-body.dark{
-    background-color: var(--dark-main-color);
-}
-.inner-cursor.dark{
-    position:fixed;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    /* background-color:rgb(228, 61, 61); */
-    background-color:var(--main-color);
-    pointer-events: none;
-    /* mix-blend-mode: difference; */
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    z-index: auto;
-    
-}
-a.dark {
-    text-decoration: none;
-    color:var(--dark-color);
-}
-
-.student-list.dark>*{
-    color: var(--dark-color);
-}
-
-footer.dark{
-    height: 5vh;
-    color: var(--dark-color);
-    background-color: var(--dark-main-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:100%;
-    bottom: 0;
-}
 
 
 /* ==================== MEDIA QUERIESS  ==================== */
